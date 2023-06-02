@@ -1,0 +1,163 @@
+nav,
+header,
+.notes,
+#create {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  overflow-y: hidden;
+}
+#logo {
+  color: #4c5b86;
+  letter-spacing: 0.1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-active {
+  color: black;
+}
+.nav-inactive {
+  color: rgba(0, 0, 0, 0.2);
+}
+nav li {
+  cursor: pointer;
+}
+nav li p,
+nav i {
+  font-size: 0.85rem;
+}
+#upgrade p {
+  color: rgba(0, 0, 0, 0.4);
+}
+.purple {
+  background-color: #243c78;
+  color: white;
+  font-size: 0.75rem;
+}
+#search {
+  background-color: #f6f8fa;
+}
+#search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+#search input::placeholder,
+#search i {
+  color: rgba(0, 0, 0, 0.2);
+}
+#con {
+  background-color: #f6f8fa;
+}
+#con {
+  border-radius: 30px 0 0 0;
+  overflow-y: auto;
+  height: 85vh;
+}
+section a {
+  text-decoration: none;
+}
+section a.nav-active {
+  position: relative;
+}
+section a.nav-active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  border-bottom: 1px solid;
+}
+
+.notes:not(.notes.border) p {
+  font-family: calibri;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.notes {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.valid {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.invalid {
+  border-color: red;
+}
+.notes.border {
+  border: 2px dashed rgba(0, 0, 0, 0.1) !important;
+}
+
+#recent-notes .notes span {
+  border-radius: 8px;
+}
+#recent-notes .notes p {
+  color: rgba(0, 0, 0, 0.7);
+}
+#create,
+#edit {
+  border-radius: 50px 0 0 0;
+}
+#create #time,
+#edit #time {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+#create input,
+#edit input {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 2rem;
+  color: black;
+  border-radius: 30px;
+}
+#create textarea,
+#edit textarea {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: black;
+  height: 50vh;
+  border-radius: 50px;
+  resize: none;
+}
+#create textarea::placeholder,
+#create input::placeholder,
+#edit textarea::placeholder,
+#edit input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#create-action span {
+  cursor: pointer;
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.selected {
+  outline: 5px solid lightblue;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(2, 9, 30, 0.2);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 50px;
+}
+.NOTES {
+  height: 300px;
+}
+#read_subtitle {
+  width: 80vw;
+  height: 60vh;
+  overflow: auto;
+}

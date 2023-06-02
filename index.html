@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./Assets/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/entypo/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="d-flex m-0 p-0">
+      <nav class="col-2 py-4 px-2 position-relative" style="height: 100vh">
+        <ul class="d-flex flex-column gap-5">
+          <li class="d-flex align-items-center gap-2" id="logo">
+            <i class="entypo-icon-shareable fs-5"></i>
+            <h1 class="text-uppercase fs-5 m-0 p-0">Mino</h1>
+          </li>
+
+          <ul class="m-0 p-0 d-flex flex-column gap-4">
+            <li class="d-flex align-items-center gap-2">
+              <i class="entypo-icon-text-document"></i>
+              <p class="text-capitalize m-0 p-0">Add new</p>
+            </li>
+
+            <li class="d-flex align-items-center gap-2 nav-inactive">
+              <i class="entypo-icon-calendar"></i>
+              <p class="text-capitalize m-0 p-0">Calendar</p>
+            </li>
+
+            <li class="d-flex align-items-center gap-2 nav-inactive">
+              <i class="entypo-icon-archive"></i>
+              <p class="text-capitalize m-0 p-0">Archive</p>
+            </li>
+
+            <li class="d-flex align-items-center gap-2 nav-inactive">
+              <i class="entypo-icon-trash"></i>
+              <p class="text-capitalize m-0 p-0">Trash</p>
+            </li>
+          </ul>
+        </ul>
+
+        <div
+          class="position-absolute px-2 py-4 bottom-0 d-flex flex-column align-items-center"
+          id="upgrade"
+        >
+          <p class="text-center">
+            Want to access unlimited notes taking experience & lots more feature
+          </p>
+
+          <div class="w-75">
+            <img
+              src="./Assets/Images/images.png"
+              class="img-fluid rounded-top"
+              alt=""
+            />
+          </div>
+          <button type="button" class="btn purple w-75">Upgrade Pro</button>
+        </div>
+      </nav>
+      <section class="col-10 py-3">
+        <header class="row px-5 m-0 align-items-center justify-content-between">
+          <h1 class="text-uppercase fs-2 col-2">My notes</h1>
+          <div
+            class="p-2 d-flex align-items-center gap-1 rounded-2 col-3"
+            id="search"
+          >
+            <i
+              data-feather="search"
+              color="rgba(0, 0, 0, 0.1)"
+              width="1rem"
+            ></i>
+            <input type="text" placeholder="Search" class="w-100" />
+          </div>
+
+          <div class="col-3 gap-2 d-flex align-items-center">
+            <div class="col-8 d-flex align-items-center gap-3">
+              <p class="fw-bold text-capitalize m-0">Sayef mahmud</p>
+              <div class="col-2">
+                <img
+                  src="./Assets/Images/black-full-beard-styles-for-black-men.jpg"
+                  class="w-100 h-100 rounded-circle"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-3">
+              <i data-feather="menu"></i>
+            </div>
+          </div>
+        </header>
+
+        <div class="col-12 my-5 p-5 position-relative" id="con">
+          <!-- Displaying New Folders-->
+
+          <div class="mb-5" id="recent-folders">
+            <h1 class="text-capitalize fs-4">Recent Folders</h1>
+            <div class="my-4 d-flex gap-4" id="folder-week">
+              <a href="#" class="nav-inactive">Today</a>
+              <a href="#" class="nav-active">This Week</a>
+              <a href="#" class="nav-inactive">This Month</a>
+            </div>
+            <div class="row gap-4 align-items-center">
+              <div class="col-3 notes" style="background-color: #dff1ff">
+                <div class="p-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center my-4"
+                  >
+                    <i data-feather="folder" color="#9297F9"></i>
+                    <i class="entypo-icon-dots-three-horizontal"></i>
+                  </div>
+
+                  <h1 class="fs-4 m-0">Movie Review</h1>
+                  <p>12/22/2021</p>
+                </div>
+              </div>
+
+              <div class="col-3 notes" style="background-color: #ffd7d5">
+                <div class="p-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center my-4"
+                  >
+                    <i data-feather="folder" color="#C1784E"></i>
+                    <i class="entypo-icon-dots-three-horizontal"></i>
+                  </div>
+
+                  <h1 class="fs-4 m-0">Class Notes</h1>
+                  <p>12/22/2021</p>
+                </div>
+              </div>
+
+              <div class="col-3 notes" style="background-color: #fefbec">
+                <div class="p-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center my-4"
+                  >
+                    <i data-feather="folder" color="#E9E582"></i>
+                    <i class="entypo-icon-dots-three-horizontal"></i>
+                  </div>
+
+                  <h1 class="fs-4 m-0">Book Lists</h1>
+                  <p>12/22/2021</p>
+                </div>
+              </div>
+
+              <div class="col-2">
+                <div class="p-4 notes border">
+                  <div
+                    class="d-flex flex-column gap-2 justify-content-center align-items-center"
+                  >
+                    <i data-feather="folder" color="black"></i>
+                    <p class="fs-6 m-0 fw-bold">New Folder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Displaying New Notes-->
+
+          <div class="mb-5" id="recent-notes">
+            <h1 class="text-capitalize fs-4">Recent Notes</h1>
+            <div class="my-4 d-flex gap-4">
+              <a href="#" class="nav-active">Todays</a>
+              <a href="#" class="nav-inactive">This Week</a>
+              <a href="#" class="nav-inactive">This Month</a>
+              <span id="deleteAll" style="cursor: pointer">Delete All</span>
+            </div>
+            <div class="row gap-4 align-items-center" id="notes-con">
+              <div class="col-2" id="createNote">
+                <div class="p-4 notes border" id="newNotes">
+                  <div
+                    class="d-flex flex-column gap-2 justify-content-center align-items-center"
+                  >
+                    <i data-feather="file" color="black"></i>
+                    <p class="fs-6 m-0 fw-bold">New Notes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creating New Notes/Folders -->
+        <div
+          class="position-fixed h-100 w-100 bg-white top-0 left-0 p-5 px-5 text-dark d-none"
+          id="create"
+        >
+          <div class="d-flex align-items-center gap-5 my-2">
+            <h1 class="fs-4 m-0">Create Note</h1>
+            <div id="create-action">
+              <span id="save">
+                <i data-feather="check" class="text-dark"></i>
+              </span>
+              <span id="exit">
+                <i data-feather="x" class="text-dark"></i>
+              </span>
+            </div>
+          </div>
+          <p class="" id="time"></p>
+
+          <div class="d-flex gap-5">
+            <div
+              class="circle"
+              style="background-color: green"
+              id="green"
+            ></div>
+            <div class="circle" style="background-color: pink" id="pink"></div>
+            <div
+              class="circle"
+              style="background-color: purple"
+              id="purple"
+            ></div>
+            <div
+              class="circle"
+              style="background-color: orange"
+              id="orange"
+            ></div>
+            <div class="circle" style="background-color: blue" id="blue"></div>
+          </div>
+          <div class="d-flex flex-column gap-4 my-5">
+            <input
+              type="text"
+              class="w-75 px-5 py-3"
+              placeholder="Title"
+              id="title"
+            />
+            <textarea
+              class="w-100 p-5"
+              placeholder="Write Something..."
+              id="subtitle"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Reading  Notes -->
+        <div
+          class="position-fixed h-100 w-100 bg-white top-0 left-0 p-5 px-5 text-dark d-none"
+          id="read"
+        >
+          <div class="d-flex align-items-center gap-5 my-2">
+            <h1 class="fs-4 m-0">Read Note</h1>
+            <div id="create-action">
+              <span id="edit-icon">
+                <i data-feather="edit-2" class="text-dark"></i>
+              </span>
+              <span id="exit">
+                <i data-feather="x" class="text-dark"></i>
+              </span>
+            </div>
+          </div>
+          <p class="" id="time"></p>
+
+          <div class="d-flex flex-column gap-4 my-5">
+            <h1 id="read_title" class=""></h1>
+            <p id="read_subtitle" class="pe-5"></p>
+          </div>
+        </div>
+        <!-- Edit Notes -->
+        <div
+          class="position-fixed h-100 w-100 bg-white top-0 left-0 p-5 px-5 text-dark d-none"
+          id="edit"
+        >
+          <div class="d-flex align-items-center gap-5 my-2">
+            <h1 class="fs-4 m-0">Edit Note</h1>
+            <div id="create-action">
+              <span id="save">
+                <i data-feather="check" class="text-dark"></i>
+              </span>
+              <span id="exit">
+                <i data-feather="x" class="text-dark"></i>
+              </span>
+            </div>
+          </div>
+          <p class="" id="time"></p>
+
+          <div class="d-flex gap-5">
+            <div
+              class="circle"
+              style="background-color: green"
+              id="green"
+            ></div>
+            <div class="circle" style="background-color: pink" id="pink"></div>
+            <div
+              class="circle"
+              style="background-color: purple"
+              id="purple"
+            ></div>
+            <div
+              class="circle"
+              style="background-color: orange"
+              id="orange"
+            ></div>
+            <div class="circle" style="background-color: blue" id="blue"></div>
+          </div>
+          <div class="row gap-4 my-5">
+            <input
+              type="text"
+              class="col-12 px-5 py-3"
+              placeholder="Title"
+              id="title"
+            />
+            <textarea
+              class="col-10 p-5"
+              placeholder="Write Something..."
+              id="subtitle"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./Assets/node_modules/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./Assets/style.js"></script>
+  </body>
+</html>
